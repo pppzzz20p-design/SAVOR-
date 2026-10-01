@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAVORÉ ร้านอาหารนานาชาติ สั่งอาหารออนไลน์">
+  <title>SAVORÉ | International Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">SAVORÉ<span>.</span></a>
+    <nav id="nav">
+      <a href="#home">หน้าแรก</a>
+      <a href="#menu">เมนู</a>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="ตะกร้า">🛒 <b id="cartCount">0</b></button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">TASTE THE WORLD</p>
+        <h1>รสชาติจากทั่วโลก<br><em>อยู่ใกล้คุณ</em></h1>
+        <p class="hero-text">รวมอาหารนานาชาติที่คัดสรรวัตถุดิบและปรุงสดใหม่ พร้อมบริการสั่งอาหารออนไลน์</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#menu">ดูเมนูทั้งหมด</a>
+          <a class="btn secondary" href="#about">รู้จักร้านของเรา</a>
+        </div>
+        <div class="hero-info">
+          <span>★ 4.9/5</span><span>•</span><span>เปิดทุกวัน 10:00–22:00</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="dish-image hero-dish">🍝</div>
+        <div class="floating-card">
+          <small>Chef's Choice</small>
+          <strong>Truffle Pasta</strong>
+          <span>฿289</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div><span>🇮🇹</span><p>Italian</p></div>
+      <div><span>🇯🇵</span><p>Japanese</p></div>
+      <div><span>🇹🇭</span><p>Thai</p></div>
+      <div><span>🇰🇷</span><p>Korean</p></div>
+      <div><span>🇺🇸</span><p>American</p></div>
+      <div><span>🥤</span><p>Drinks</p></div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR MENU</p><h2>เมนูยอดนิยม</h2></div>
+        <div class="filters">
+          <button class="filter active" data-category="all">ทั้งหมด</button>
+          <button class="filter" data-category="main">อาหารจานหลัก</button>
+          <button class="filter" data-category="japan">ญี่ปุ่น</button>
+          <button class="filter" data-category="thai">ไทย</button>
+          <button class="filter" data-category="drink">เครื่องดื่ม</button>
+        </div>
+      </div>
+      <div id="menuGrid" class="menu-grid"></div>
+    </section>
+
+    <section class="promo">
+      <div>
+        <p class="eyebrow">SPECIAL OFFER</p>
+        <h2>สั่งครบ ฿499<br>รับส่วนลดทันที ฿50</h2>
+        <p>ใช้โค้ด <strong>SAVORE50</strong> เมื่อสั่งอาหารออนไลน์</p>
+        <button class="btn light" id="promoBtn">ใช้โปรโมชั่น</button>
+      </div>
+      <div class="promo-art">🍱</div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-image">👨‍🍳</div>
+      <div class="about-content">
+        <p class="eyebrow">ABOUT SAVORÉ</p>
+        <h2>อาหารดี ๆ ทำให้ทุกวันพิเศษขึ้น</h2>
+        <p>SAVORÉ เกิดจากความตั้งใจที่จะนำรสชาติจากหลากหลายประเทศมารวมไว้ในที่เดียว เราเลือกวัตถุดิบที่มีคุณภาพและปรุงอาหารสดตามออเดอร์ เพื่อให้ทุกจานมีรสชาติที่ดีที่สุด</p>
+        <div class="stats">
+          <div><strong>20+</strong><span>เมนู</span></div>
+          <div><strong>4.9</strong><span>คะแนนรีวิว</span></div>
+          <div><strong>5 ปี</strong><span>ประสบการณ์</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section">
+      <div class="section-heading centered"><p class="eyebrow">CUSTOMER REVIEWS</p><h2>ลูกค้าพูดถึงเรา</h2></div>
+      <div class="review-grid">
+        <article><div class="stars">★★★★★</div><p>“อาหารอร่อยมาก แพ็กเกจดี และส่งเร็ว เมนูพาสต้าแนะนำเลยครับ”</p><strong>— Beam</strong></article>
+        <article><div class="stars">★★★★★</div><p>“ชอบที่มีหลายสไตล์ให้เลือก สั่งครั้งเดียวได้ทั้งอาหารญี่ปุ่นและอาหารไทย”</p><strong>— Mint</strong></article>
+        <article><div class="stars">★★★★★</div><p>“ร้านสวย เมนูดูดี ราคาไม่แรง เหมาะกับมาทานกับเพื่อนมาก”</p><strong>— Guy</strong></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div><p class="eyebrow">CONTACT</p><h2>พร้อมให้บริการทุกวัน</h2><p>📍 99/9 ถนนใจกลางเมือง<br>📞 080-123-4567<br>✉️ hello@savore.example</p></div>
+      <form id="contactForm">
+        <input type="text" placeholder="ชื่อของคุณ" required>
+        <input type="email" placeholder="อีเมล" required>
+        <textarea placeholder="ข้อความ" rows="4" required></textarea>
+        <button class="btn primary" type="submit">ส่งข้อความ</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="logo" href="#home">SAVORÉ<span>.</span></a><p>International Restaurant</p></div>
+    <div class="footer-links"><a href="#menu">เมนู</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อ</a></div>
+    <p>© 2026 SAVORÉ. All rights reserved.</p>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head"><h2>ตะกร้าของคุณ</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>ยอดรวม</span><strong id="cartTotal">฿0</strong></div>
+    <button class="btn primary full" id="checkoutBtn">สั่งอาหาร</button>
+  </aside>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal">×</button>
+      <p class="eyebrow">CHECKOUT</p><h2>ยืนยันการสั่งอาหาร</h2>
+      <form id="checkoutForm">
+        <input name="name" placeholder="ชื่อผู้รับ" required>
+        <input name="phone" placeholder="เบอร์โทรศัพท์" required>
+        <textarea name="address" placeholder="ที่อยู่จัดส่ง" rows="3" required></textarea>
+        <select name="payment"><option>เก็บเงินปลายทาง</option><option>โอนเงิน</option></select>
+        <button class="btn primary full">ยืนยันคำสั่งซื้อ</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
